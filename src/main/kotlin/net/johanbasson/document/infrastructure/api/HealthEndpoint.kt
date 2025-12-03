@@ -22,10 +22,10 @@ object HealthEndpoint {
     val handler: (Request) -> Response = { _: Request ->
         Response(Status.OK).with(
             healthLens of
-                    HealthResponse(
-                        status = "UP",
-                        service = "document-api",
-                    ),
+                HealthResponse(
+                    status = "UP",
+                    service = "document-api",
+                ),
         )
     }
 

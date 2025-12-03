@@ -4,7 +4,6 @@ import io.kotest.matchers.shouldBe
 import org.hamcrest.Matchers.equalTo
 
 class HealthIntegrationTest : BaseIntegrationTest() {
-
     init {
         context("GET /health") {
             test("should return 200 OK") {

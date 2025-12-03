@@ -12,15 +12,15 @@ import org.http4k.server.asServer
 class Server(
     config: ServerConfig,
 ) {
-
     private val contractRoutes = ContractRoutes()
     private val app = contractRoutes.routes
 
-    private val appWithFilters =   DebuggingFilters
-        .PrintRequestAndResponse()
-        .then(ServerFilters.CatchAll())
-        .then(CatchLensFailure())
-        .then(app)
+    private val appWithFilters =
+        DebuggingFilters
+            .PrintRequestAndResponse()
+            .then(ServerFilters.CatchAll())
+            .then(CatchLensFailure())
+            .then(app)
 
     private val netty = appWithFilters.asServer(Netty(config.port))
 

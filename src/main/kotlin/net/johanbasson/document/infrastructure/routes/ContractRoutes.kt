@@ -8,7 +8,6 @@ import org.http4k.core.HttpHandler
 import org.http4k.format.KotlinxSerialization
 
 class ContractRoutes {
-
     val routes: HttpHandler =
         contract {
             renderer =
