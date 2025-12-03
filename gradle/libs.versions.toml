@@ -1,5 +1,15 @@
 [versions]
+arrow = "2.1.2"
+bcrypt = "0.4"
 http4k = "6.23.0.0"
+jwt = "4.5.0"
+kotest = "5.7.2"
+kotest-assertions-arrow = "2.0.0"
+kotlin-logging = "3.0.5"
+logback = "1.5.19"
+mockk = "1.13.7"
+rest-assured = "5.5.6"
+slf4j = "2.0.17"
 
 [libraries]
 http4k-core = { group = "org.http4k", name = "http4k-core", version.ref = "http4k" }
@@ -9,7 +19,25 @@ http4k-format-jackson = { group = "org.http4k", name = "http4k-format-jackson", 
 http4k-client-okhttp = { group = "org.http4k", name = "http4k-client-okhttp", version.ref = "http4k" }
 http4k-api-openapi = { group = "org.http4k", name = "http4k-api-openapi", version.ref = "http4k" }
 http4k-api-ui-swagger = { group = "org.http4k", name = "http4k-api-ui-swagger", version.ref = "http4k" }
-
 http4k-ops-micrometer = { group = "org.http4k", name = "http4k-ops-micrometer", version.ref = "http4k" }
 http4k-ops-opentelemetry = { group = "org.http4k", name = "http4k-ops-opentelemetry", version.ref = "http4k" }
 http4k-ops-resilience4j = { group = "org.http4k", name = "http4k-ops-resilience4j", version.ref = "http4k" }
+
+logging-kotlin = { group = "io.github.microutils", name = "kotlin-logging-jvm", version.ref = "kotlin-logging" }
+logging-logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+logging-slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+
+arrow-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { group = "io.arrow-kt", name = "arrow-fx-coroutines", version.ref = "arrow" }
+
+bcrypt-core = { group = "org.mindrot", name = "jbcrypt", version.ref = "bcrypt" }
+jwt-core = { group = "com.auth0", name = "java-jwt", version.ref = "jwt" }
+
+restAssured-core = { group = "io.rest-assured", name = "rest-assured", version.ref = "rest-assured" }
+
+kotest-runner-junit5 = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotest" }
+kotest-assertions-arrow = { group = "io.kotest.extensions", name = "kotest-assertions-arrow", version.ref = "kotest-assertions-arrow" }
+
+mockk-core = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
