@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.20"
+    id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
 }
 
 group = "net.johanbasson"
@@ -21,7 +22,6 @@ dependencies {
     implementation(libs.http4k.ops.micrometer)
     implementation(libs.http4k.ops.opentelemetry)
     implementation(libs.http4k.ops.resilience4j)
-
 
     testImplementation(kotlin("test"))
 }
